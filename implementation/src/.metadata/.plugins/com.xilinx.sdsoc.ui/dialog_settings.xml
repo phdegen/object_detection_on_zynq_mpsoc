@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev" key="sdx.custom.platform.repository.last.directory.dialog.location"/>
+	<item value="zcu102_es2_ev" key="sdx.platform"/>
+	<item value="a53_0" key="sdx.cpu"/>
+	<item value="/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src" key="sdx.project.location"/>
+	<item value="1" key="sdx.device.count"/>
+	<item value="false" key="sdx.is.shared.library"/>
+	<item value="false" key="sdx.is.system.root"/>
+	<item value="C/C++" key="sdx.runtime"/>
+	<item value="/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev" key="sdx.custom.platform.repository.locations"/>
+	<item value="linux" key="sdx.os"/>
+	<item value="obj_det_platform" key="sdx.project.name"/>
+	<item value="linux" key="sdx.system.configuration"/>
+</section>

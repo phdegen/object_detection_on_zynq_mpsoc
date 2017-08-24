@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Apr 18 10:48:07 2017
+# Process ID: 29271
+# Current directory: /scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado
+# Command line: vivado zcu102_es2_ev.xpr
+# Log file: /scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/vivado.log
+# Journal file: /scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project zcu102_es2_ev.xpr
+INFO: [Project 1-313] Project file moved from '/group/paeg/ckohn/zcu102_base_trd_package_2016.3/pl/zcu102_base_trd/.Xil/Vivado-18025-xsjl23957/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory '/scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/zcu102_es2_ev.cache/ip', nor could it be found using path '/group/paeg/ckohn/zcu102_base_trd_package_2016.3/pl/zcu102_base_trd/.Xil/Vivado-18025-xsjl23957/PrjAr/_X_/zcu102_es2_ev.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/zcu102_es2_ev.ipdefs/ip_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/pack/vivado-2016.3-kgf/Vivado/2016.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'zcu102_es2_ev.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+zcu102_es2_ev_zynq_ultra_ps_e_0_0
+
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 6379.969 ; gain = 485.418 ; free physical = 3690 ; free virtual = 52788
+open_bd_design {/scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/zcu102_es2_ev.srcs/sources_1/bd/zcu102_es2_ev/zcu102_es2_ev.bd}
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_1
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - interrupts
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_clk50
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_clk75
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_clk150
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_clk300
+Adding cell -- xilinx.com:ip:zynq_ultra_ps_e:2.0 - zynq_ultra_ps_e_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_2
+Adding cell -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_1
+Adding cell -- xilinx.com:ip:v_tpg:7.0 - v_tpg_1
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - zero_24bit
+Adding cell -- xilinx.com:ip:util_ds_buf:2.1 - util_ds_buf_0
+Adding cell -- xilinx.com:ip:util_ds_buf:2.1 - util_ds_buf_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_vcc
+Adding cell -- xilinx.com:ip:xlslice:1.0 - iic_rst_b
+Adding cell -- xilinx.com:ip:xlslice:1.0 - tpg_rst_gpio
+Adding cell -- avnet:avnet_hdmi:avnet_hdmi_in:3.1 - avnet_hdmi_in_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_1
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us_df
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us_df
+Successfully read diagram <zcu102_es2_ev> from BD file </scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/zcu102_es2_ev.srcs/sources_1/bd/zcu102_es2_ev/zcu102_es2_ev.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6498.648 ; gain = 89.309 ; free physical = 3556 ; free virtual = 52675
+WARNING: [Boardtcl 53-1] No current board_part set.
+WARNING: [Boardtcl 53-1] No current board_part set.
+WARNING: [Boardtcl 53-1] No current board_part set.
+set_property location {3 910 760} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 750} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 740} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 730} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 720} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 710} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 720} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 730} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 740} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 750} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 760} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 770} [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells interrupts]
+endgroup
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 10:56:11 2017...

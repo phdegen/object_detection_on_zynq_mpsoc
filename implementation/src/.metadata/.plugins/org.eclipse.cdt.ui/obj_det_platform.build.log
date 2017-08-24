@@ -1,0 +1,7 @@
+17:56:47 **** Clean-only build of configuration Release for project obj_det_platform ****
+make clean 
+rm -rf _sds sd_card  ./src/camera_utils.o ./src/eval_results.o ./src/finalise_output.o ./src/hw_convs.o ./src/image_utils.o ./src/load_model.o ./src/network_utils.o ./src/run.o ./src/run_network.o  ./src/camera_utils.d ./src/eval_results.d ./src/finalise_output.d ./src/hw_convs.d ./src/image_utils.d ./src/load_model.d ./src/network_utils.d ./src/run.d ./src/run_network.d  obj_det_platform.elf
+ 
+
+17:56:48 Build Finished (took 338ms)
+

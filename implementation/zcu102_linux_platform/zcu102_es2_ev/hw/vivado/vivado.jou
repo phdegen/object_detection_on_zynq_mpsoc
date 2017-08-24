@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Apr 18 10:48:07 2017
+# Process ID: 29271
+# Current directory: /scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado
+# Command line: vivado zcu102_es2_ev.xpr
+# Log file: /scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/vivado.log
+# Journal file: /scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project zcu102_es2_ev.xpr
+open_bd_design {/scratch/msc17f2/custom_linux_platfrom/zcu102_es2_ev/hw/vivado/zcu102_es2_ev.srcs/sources_1/bd/zcu102_es2_ev/zcu102_es2_ev.bd}
+set_property location {3 910 760} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 750} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 740} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 730} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 720} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 710} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 720} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 730} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 740} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 750} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 760} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 910 770} [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells interrupts]
+endgroup

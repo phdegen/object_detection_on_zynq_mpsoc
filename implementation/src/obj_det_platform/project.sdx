@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="obj_det_platform" location="/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_platform" platform="zcu102_es2_ev" sysConfig="linux" runtime="C/C++" cpu="a53_0" os="linux" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.1463667524">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.563856588">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="conv_hw_3x3" filepath="src/hw_convs.c" clkid="2"/>
+      <accelerator name="conv_hw_1x1_double" filepath="src/hw_convs.c" clkid="2"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="conv_hw_3x3" filepath="src/hw_convs.c" clkid="2"/>
+      <accelerator name="conv_hw_1x1_double" filepath="src/hw_convs.c" clkid="2"/>
+    </lastBuildOptions>
+  </configuration>
+</sdsproject:SDSProject>

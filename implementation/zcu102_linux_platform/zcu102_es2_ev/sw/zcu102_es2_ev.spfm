@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="zcu102_es2_ev"
+              sdx:version="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+Zynq UltraScale+ MPSoC Embedded Vision Platform targeting the ZCU102 rev 1.0 evaluation board with ES2 silicon    
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="linux">
+        <sdx:configuration sdx:name="linux"
+                           sdx:displayName="Linux SMP (Zynq UltraScale+)"
+                           sdx:defaultProcessorGroup="a53_0">
+            <sdx:description>Linux SMP running on Zynq UltraScale+</sdx:description>
+            <sdx:prebuilt sdx:data="prebuilt_platform"/>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                           sdx:type="sd"
+                           sdx:bif="boot/linux.bif"
+                           sdx:imageData="image"
+                           sdx:mountPath="/media/card"
+                           sdx:readme="boot/generic.readme"
+                />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="a53_0"
+                                sdx:displayName="A53_0,A53_1,A53_2,A53_3"
+                                sdx:cpuType="cortex-a53">
+                <sdx:os sdx:name="linux"
+                        sdx:displayName="Linux SMP"
+                        sdx:includePaths="aarch64-linux-gnu/video/include:aarch64-linux-gnu/sysroot/include"
+                        sdx:libraryPaths="aarch64-linux-gnu/video/lib:aarch64-linux-gnu/sysroot/lib"
+                        sdx:crossCompilerType="linux"
+                        sdx:toolConfig="zynq_ultrascale.cfg"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

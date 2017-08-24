@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest:Manifest xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:manifest="http://www.xilinx.com/manifest">
+  <template name="2D Filter" location="filter2d/src" description="2D convolution filter">
+    <supports>
+      <and>
+        <os name="Linux"/>
+      </and>
+    </supports>
+    <system dmclkid="2"/>
+    <accelerator name="filter2d_sds" location="filter2d_sds.cpp" clkid="2"/>
+    <libraries>
+      <lib name="video"/>
+      <lib name="drm"/>
+      <lib name="v4l2subdev"/>
+      <lib name="mediactl"/>
+      <lib name="opencv_core"/>
+      <lib name="opencv_imgproc"/>
+    </libraries>
+    <compiler inferredOptions="-DPLATFORM_ZCU102 -DHLS_NO_XIL_FPO_LIB -DWITH_SDSOC -DSAMPLE_FILTER2D -Wno-overloaded-virtual -Wno-unused-label -Wno-strict-overflow -Wno-uninitialized -Wno-unused-function -Wno-unused-variable -Wno-unknown-attributes -Wno-unused-local-typedefs"/>
+  </template>
+  <template name="Optical Flow" location="optical_flow/src" description="Compute optical flow">
+    <supports>
+      <and>
+        <os name="Linux"/>
+      </and>
+    </supports>
+    <system dmclkid="1"/>
+    <accelerator name="readMatRows" location="optflow_hls.cpp" clkid="1"/>
+    <accelerator name="writeMatRows" location="optflow_hls.cpp" clkid="1"/>
+    <accelerator name="computeSum" location="optflow_hls.cpp" clkid="1"/>
+    <accelerator name="computeFlow" location="optflow_hls.cpp" clkid="1"/>
+    <accelerator name="getOutPix" location="optflow_hls.cpp" clkid="1"/>
+    <libraries>
+      <lib name="video"/>
+      <lib name="drm"/>
+      <lib name="v4l2subdev"/>
+      <lib name="mediactl"/>
+      <lib name="opencv_core"/>
+      <lib name="opencv_imgproc"/>
+    </libraries>
+    <compiler inferredOptions="-DPLATFORM_ZCU102 -DHLS_NO_XIL_FPO_LIB -DWITH_SDSOC -DSAMPLE_OPTICAL_FLOW -Wno-overloaded-virtual -Wno-unused-label -Wno-strict-overflow -Wno-uninitialized -Wno-unused-function -Wno-unused-variable -Wno-unknown-attributes -Wno-unused-local-typedefs"/>
+  </template>
+</manifest:Manifest>

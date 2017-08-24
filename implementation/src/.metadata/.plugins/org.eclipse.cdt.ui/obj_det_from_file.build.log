@@ -1,0 +1,382 @@
+18:00:04 **** Build of configuration Release for project obj_det_from_file ****
+make pre-build main-build 
+sdsoc_make_clean Release
+rm: cannot remove `src/hw_convs.o': No such file or directory
+rm: cannot remove `src/hw_convs.o': No such file or directory
+ 
+Building file: ../src/eval_results.c
+Invoking: SDSCC Compiler
+sdscc -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/eval_results.o" -fopenmp -MMD -MP -MF"src/eval_results.d" -MT"src/eval_results.o" -o "src/eval_results.o" "../src/eval_results.c" -sds-hw conv_hw_3x3 hw_convs.c  -clkid 2 -sds-end -sds-hw conv_hw_1x1_double hw_convs.c  -clkid 2 -sds-end -sds-sys-config linux -sds-proc a53_0 -sds-pf /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+INFO: [SDSoC 0-0] Compiling /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/eval_results.c
+sdscc log file saved as /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/reports/sds_eval_results.log
+
+Finished building: ../src/eval_results.c
+ 
+Building file: ../src/finalise_output.c
+Invoking: SDSCC Compiler
+sdscc -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/finalise_output.o" -fopenmp -MMD -MP -MF"src/finalise_output.d" -MT"src/finalise_output.o" -o "src/finalise_output.o" "../src/finalise_output.c" -sds-hw conv_hw_3x3 hw_convs.c  -clkid 2 -sds-end -sds-hw conv_hw_1x1_double hw_convs.c  -clkid 2 -sds-end -sds-sys-config linux -sds-proc a53_0 -sds-pf /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+INFO: [SDSoC 0-0] Compiling /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/finalise_output.c
+sdscc log file saved as /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/reports/sds_finalise_output.log
+
+Finished building: ../src/finalise_output.c
+ 
+Building file: ../src/hw_convs.c
+Invoking: SDSCC Compiler
+sdscc -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/hw_convs.o" -fopenmp -MMD -MP -MF"src/hw_convs.d" -MT"src/hw_convs.o" -o "src/hw_convs.o" "../src/hw_convs.c" -sds-hw conv_hw_3x3 hw_convs.c  -clkid 2 -sds-end -sds-hw conv_hw_1x1_double hw_convs.c  -clkid 2 -sds-end -sds-sys-config linux -sds-proc a53_0 -sds-pf /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev
+INFO: [SDSoC 0-0] Processing -sds-hw block for conv_hw_3x3
+INFO: [SDSoC 0-0] Processing -sds-hw block for conv_hw_1x1_double
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:110:6: warning: unused variable 'cnt2_dim2' [-Wunused-variable]
+        int cnt2_dim2=0;
+            ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:112:6: warning: unused variable 'countpos' [-Wunused-variable]
+        int countpos=0;
+            ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:115:2: warning: unused label 'filter_init_conv' [-Wunused-label]
+        filter_init_conv:
+        ^~~~~~~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:146:2: warning: unused label 'filter_init_bias' [-Wunused-label]
+        filter_init_bias:
+        ^~~~~~~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:203:2: warning: unused label 'convolution' [-Wunused-label]
+        convolution:
+        ^~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:425:2: warning: unused label 'filter_init_conv' [-Wunused-label]
+        filter_init_conv:
+        ^~~~~~~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:448:2: warning: unused label 'filter_init_bias' [-Wunused-label]
+        filter_init_bias:
+        ^~~~~~~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:470:2: warning: unused label 'input_init_trans' [-Wunused-label]
+        input_init_trans:
+        ^~~~~~~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:500:2: warning: unused label 'copy_last_two_rows' [-Wunused-label]
+        copy_last_two_rows:
+        ^~~~~~~~~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:522:2: warning: unused label 'input_trans' [-Wunused-label]
+        input_trans:
+        ^~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:579:2: warning: unused label 'convolution' [-Wunused-label]
+        convolution:
+        ^~~~~~~~~~~~
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/hw_convs.c:732:2: warning: unused label 'output_trans' [-Wunused-label]
+        output_trans:
+        ^~~~~~~~~~~~~
+INFO: [SDSoC 0-0] Performing accelerator source linting for conv_hw_3x3
+INFO: [SDSoC 0-0] Performing accelerator source linting for conv_hw_1x1_double
+INFO: [SDSoC 0-0] Performing pragma generation
+INFO: [SDSoC 0-0] Successfully generated tcl script: /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/vhls/conv_hw_3x3.tcl
+INFO: [SDSoC 0-0] Moving function conv_hw_3x3 to Programmable Logic
+INFO: [SDSoC 0-0] Performing pragma generation
+INFO: [SDSoC 0-0] Successfully generated tcl script: /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/vhls/conv_hw_1x1_double.tcl
+INFO: [SDSoC 0-0] Moving function conv_hw_1x1_double to Programmable Logic
+sdscc log file saved as /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/reports/sds_hw_convs.log
+
+Finished building: ../src/hw_convs.c
+ 
+Building file: ../src/image_utils.c
+Invoking: SDSCC Compiler
+sdscc -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/image_utils.o" -fopenmp -MMD -MP -MF"src/image_utils.d" -MT"src/image_utils.o" -o "src/image_utils.o" "../src/image_utils.c" -sds-hw conv_hw_3x3 hw_convs.c  -clkid 2 -sds-end -sds-hw conv_hw_1x1_double hw_convs.c  -clkid 2 -sds-end -sds-sys-config linux -sds-proc a53_0 -sds-pf /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+INFO: [SDSoC 0-0] Compiling /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/image_utils.c
+sdscc log file saved as /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/reports/sds_image_utils.log
+
+Finished building: ../src/image_utils.c
+ 
+Building file: ../src/load_model.c
+Invoking: SDSCC Compiler
+sdscc -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/load_model.o" -fopenmp -MMD -MP -MF"src/load_model.d" -MT"src/load_model.o" -o "src/load_model.o" "../src/load_model.c" -sds-hw conv_hw_3x3 hw_convs.c  -clkid 2 -sds-end -sds-hw conv_hw_1x1_double hw_convs.c  -clkid 2 -sds-end -sds-sys-config linux -sds-proc a53_0 -sds-pf /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+INFO: [SDSoC 0-0] Compiling /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/load_model.c
+sdscc log file saved as /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/reports/sds_load_model.log
+
+Finished building: ../src/load_model.c
+ 
+Building file: ../src/run.c
+Invoking: SDSCC Compiler
+sdscc -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/run.o" -fopenmp -MMD -MP -MF"src/run.d" -MT"src/run.o" -o "src/run.o" "../src/run.c" -sds-hw conv_hw_3x3 hw_convs.c  -clkid 2 -sds-end -sds-hw conv_hw_1x1_double hw_convs.c  -clkid 2 -sds-end -sds-sys-config linux -sds-proc a53_0 -sds-pf /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+INFO: [SDSoC 0-0] Compiling /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/run.c
+sdscc log file saved as /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/reports/sds_run.log
+
+Finished building: ../src/run.c
+ 
+Building file: ../src/run_network.c
+Invoking: SDSCC Compiler
+sdscc -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/run_network.o" -fopenmp -MMD -MP -MF"src/run_network.d" -MT"src/run_network.o" -o "src/run_network.o" "../src/run_network.c" -sds-hw conv_hw_3x3 hw_convs.c  -clkid 2 -sds-end -sds-hw conv_hw_1x1_double hw_convs.c  -clkid 2 -sds-end -sds-sys-config linux -sds-proc a53_0 -sds-pf /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+INFO: [SDSoC 0-0] Compiling /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/run_network.c
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/src/run_network.c: In function 'run_network':
+sdscc log file saved as /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/reports/sds_run_network.log
+
+Finished building: ../src/run_network.c
+ 
+Building target: obj_det_from_file.elf
+Invoking: SDS++ Linker
+sds++  -o "obj_det_from_file.elf"  ./src/eval_results.o ./src/finalise_output.o ./src/hw_convs.o ./src/image_utils.o ./src/load_model.o ./src/run.o ./src/run_network.o   -lgomp -dmclkid 2  -sds-sys-config linux -sds-proc a53_0 -sds-pf /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/zcu102_linux_platform/zcu102_es2_ev
+INFO: [SDSoC 0-0] Analyzing object files
+... /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/src/eval_results.o
+... /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/src/finalise_output.o
+... /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/src/hw_convs.o
+... /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/src/image_utils.o
+... /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/src/load_model.o
+... /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/src/run.o
+... /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/src/run_network.o
+INFO: [SDSoC 0-0] Generating data motion network
+INFO: [SDSoC 0-0] Analyzing hardware accelerators...
+INFO: [SDSoC 0-0] Analyzing callers to hardware accelerators...
+ERROR: [SDSoC 0-0] Cannot find corresponding caller for SW(186)@91#pragma (sds_wait:1)\n
+INFO: [SDSoC 0-0] Scheduling data transfer graph for partition 0
+INFO: [SDSoC 0-0] Creating data motion network hardware for partition 0
+INFO: [SDSoC 0-0] Creating software stub functions for partition 0
+INFO: [SDSoC 0-0] Generating data motion network report for partition 0
+INFO: [SDSoC 0-0] Rewriting caller code
+INFO: [SDSoC 0-0] Creating block diagram (BD), address map, port information and device registration for partition 0 (this may take a few minutes)
+system_linker started at Fri Aug 11 18:57:39 CEST 2017
+INFO: [SDSoC 0-0] Copying address map
+INFO: [SDSoC 0-0] Creating port and device registration data
+system_linker completed at Fri Aug 11 19:00:04 CEST 2017
+INFO: [SDSoC 0-0] Rewrite caller functions
+INFO: [SDSoC 0-0] Compile caller rewrite file /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'conv_hw_1x1':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'conv_hw_1x1_double':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'init_filters_1x1':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:160:2: warning: label 'filter_init_bias' defined but not used [-Wunused-label]
+  filter_init_bias:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:129:2: warning: label 'filter_init_conv' defined but not used [-Wunused-label]
+  filter_init_conv:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:126:6: warning: unused variable 'countpos' [-Wunused-variable]
+  int countpos=0;
+      ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:124:6: warning: unused variable 'cnt2_dim2' [-Wunused-variable]
+  int cnt2_dim2=0;
+      ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'perf_conv_1x1_1':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:217:2: warning: label 'convolution' defined but not used [-Wunused-label]
+  convolution:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'conv_hw_3x3':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'init_filters_3x3':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:462:2: warning: label 'filter_init_bias' defined but not used [-Wunused-label]
+  filter_init_bias:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:439:2: warning: label 'filter_init_conv' defined but not used [-Wunused-label]
+  filter_init_conv:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'init_input_first_line':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:484:2: warning: label 'input_init_trans' defined but not used [-Wunused-label]
+  input_init_trans:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'transfer_input':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:536:2: warning: label 'input_trans' defined but not used [-Wunused-label]
+  input_trans:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:514:2: warning: label 'copy_last_two_rows' defined but not used [-Wunused-label]
+  copy_last_two_rows:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'perf_conv_3x3':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:593:2: warning: label 'convolution' defined but not used [-Wunused-label]
+  convolution:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'transfer_output':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:746:2: warning: label 'output_trans' defined but not used [-Wunused-label]
+  output_trans:
+  ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c: In function 'perf_conv_1x1_1':
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:251:26: warning: 'temp_in1.data[7]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         inp[e][l][f/8][0]=temp_in1.data[l];
+                          ^
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:251:26: warning: 'temp_in1.data[6]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:251:26: warning: 'temp_in1.data[5]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:251:26: warning: 'temp_in1.data[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:251:26: warning: 'temp_in1.data[3]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:251:26: warning: 'temp_in1.data[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:251:26: warning: 'temp_in1.data[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/hw_convs.c:251:26: warning: 'temp_in1.data[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+INFO: [SDSoC 0-0] Compile caller rewrite file /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/run_network.c
+/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/swstubs/run_network.c: In function 'run_network':
+INFO: [SDSoC 0-0] Prepare hardware access API functions
+INFO: [SDSoC 0-0] Create accelerator stub functions
+INFO: [SDSoC 0-0] Compile hardware access API functions
+INFO: [SDSoC 0-0] Compile accelerator stub functions
+hw_convs.c: In function 'conv_hw_1x1':
+hw_convs.c: In function 'conv_hw_1x1_double':
+hw_convs.c: In function 'init_filters_1x1':
+hw_convs.c:227:2: warning: label 'filter_init_bias' defined but not used [-Wunused-label]
+  filter_init_bias:
+  ^
+hw_convs.c:196:2: warning: label 'filter_init_conv' defined but not used [-Wunused-label]
+  filter_init_conv:
+  ^
+hw_convs.c:193:6: warning: unused variable 'countpos' [-Wunused-variable]
+  int countpos=0;
+      ^
+hw_convs.c:191:6: warning: unused variable 'cnt2_dim2' [-Wunused-variable]
+  int cnt2_dim2=0;
+      ^
+hw_convs.c: In function 'perf_conv_1x1_1':
+hw_convs.c:284:2: warning: label 'convolution' defined but not used [-Wunused-label]
+  convolution:
+  ^
+hw_convs.c: In function 'conv_hw_3x3':
+hw_convs.c: In function 'init_filters_3x3':
+hw_convs.c:643:2: warning: label 'filter_init_bias' defined but not used [-Wunused-label]
+  filter_init_bias:
+  ^
+hw_convs.c:620:2: warning: label 'filter_init_conv' defined but not used [-Wunused-label]
+  filter_init_conv:
+  ^
+hw_convs.c: In function 'init_input_first_line':
+hw_convs.c:665:2: warning: label 'input_init_trans' defined but not used [-Wunused-label]
+  input_init_trans:
+  ^
+hw_convs.c: In function 'transfer_input':
+hw_convs.c:717:2: warning: label 'input_trans' defined but not used [-Wunused-label]
+  input_trans:
+  ^
+hw_convs.c:695:2: warning: label 'copy_last_two_rows' defined but not used [-Wunused-label]
+  copy_last_two_rows:
+  ^
+hw_convs.c: In function 'perf_conv_3x3':
+hw_convs.c:774:2: warning: label 'convolution' defined but not used [-Wunused-label]
+  convolution:
+  ^
+hw_convs.c: In function 'transfer_output':
+hw_convs.c:927:2: warning: label 'output_trans' defined but not used [-Wunused-label]
+  output_trans:
+  ^
+hw_convs.c: In function 'perf_conv_1x1_1':
+hw_convs.c:318:26: warning: 'temp_in1.data[7]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         inp[e][l][f/8][0]=temp_in1.data[l];
+                          ^
+hw_convs.c:318:26: warning: 'temp_in1.data[6]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[5]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[3]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c: In function 'conv_hw_1x1':
+hw_convs.c: In function 'conv_hw_1x1_double':
+hw_convs.c: In function 'init_filters_1x1':
+hw_convs.c:227:2: warning: label 'filter_init_bias' defined but not used [-Wunused-label]
+  filter_init_bias:
+  ^
+hw_convs.c:196:2: warning: label 'filter_init_conv' defined but not used [-Wunused-label]
+  filter_init_conv:
+  ^
+hw_convs.c:193:6: warning: unused variable 'countpos' [-Wunused-variable]
+  int countpos=0;
+      ^
+hw_convs.c:191:6: warning: unused variable 'cnt2_dim2' [-Wunused-variable]
+  int cnt2_dim2=0;
+      ^
+hw_convs.c: In function 'perf_conv_1x1_1':
+hw_convs.c:284:2: warning: label 'convolution' defined but not used [-Wunused-label]
+  convolution:
+  ^
+hw_convs.c: In function 'conv_hw_3x3':
+hw_convs.c: In function 'init_filters_3x3':
+hw_convs.c:643:2: warning: label 'filter_init_bias' defined but not used [-Wunused-label]
+  filter_init_bias:
+  ^
+hw_convs.c:620:2: warning: label 'filter_init_conv' defined but not used [-Wunused-label]
+  filter_init_conv:
+  ^
+hw_convs.c: In function 'init_input_first_line':
+hw_convs.c:665:2: warning: label 'input_init_trans' defined but not used [-Wunused-label]
+  input_init_trans:
+  ^
+hw_convs.c: In function 'transfer_input':
+hw_convs.c:717:2: warning: label 'input_trans' defined but not used [-Wunused-label]
+  input_trans:
+  ^
+hw_convs.c:695:2: warning: label 'copy_last_two_rows' defined but not used [-Wunused-label]
+  copy_last_two_rows:
+  ^
+hw_convs.c: In function 'perf_conv_3x3':
+hw_convs.c:774:2: warning: label 'convolution' defined but not used [-Wunused-label]
+  convolution:
+  ^
+hw_convs.c: In function 'transfer_output':
+hw_convs.c:927:2: warning: label 'output_trans' defined but not used [-Wunused-label]
+  output_trans:
+  ^
+hw_convs.c: In function 'perf_conv_1x1_1':
+hw_convs.c:318:26: warning: 'temp_in1.data[7]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         inp[e][l][f/8][0]=temp_in1.data[l];
+                          ^
+hw_convs.c:318:26: warning: 'temp_in1.data[6]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[5]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[4]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[3]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+hw_convs.c:318:26: warning: 'temp_in1.data[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+INFO: [SDSoC 0-0] Link application ELF file
+INFO: [SDSoC 0-0] Enable generation of hardware programming files
+INFO: [SDSoC 0-0] Enable generation of boot files
+INFO: [SDSoC 0-0] Calling system_linker for partition 0
+system_linker started at Fri Aug 11 19:00:08 CEST 2017
+INFO: [SDSoC 0-0] Generating bitstream for platform zcu102_es2_ev.
+      This may take some time to complete
+... [19:51:43] Starting synth_design
+... [19:52:04] Starting RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:50 . Memory (MB): peak = 1888.730 ; gain = 885.828 ; free physical = 11042 ; free virtual = 51892
+... [19:52:50] Start Loading Part and Timing Information
+... [19:52:50] Start Applying 'set_property' XDC Constraints
+... [19:52:50] Start RTL Component Statistics 
+... [19:52:50] Start RTL Hierarchical Component Statistics 
+... [19:52:50] Start Part Resource Summary
+... [19:52:50] Start Cross Boundary and Area Optimization
+... [19:52:50] Start Timing Optimization
+... [19:53:01] Start Applying XDC Timing Constraints
+... [19:53:01] Start Technology Mapping
+... [19:53:01] Start IO Insertion
+... [19:53:01] Start Flattening Before IO Insertion
+... [19:53:01] Start Final Netlist Cleanup
+... [19:53:01] Start Renaming Generated Instances
+... [19:53:01] Start Rebuilding User Hierarchy
+... [19:53:01] Start Renaming Generated Ports
+... [19:53:01] Start Handling Custom Attributes
+... [19:53:01] Start Renaming Generated Nets
+... [19:53:01] Start Writing Synthesis Report
+... [19:56:55] Starting DRC Task
+... [19:58:14] Starting Logic Optimization Task
+... [20:00:37] Starting Connectivity Check Task
+... [20:00:42] Starting Power Optimization Task
+... [20:02:53] Starting PowerOpt Patch Enables Task
+... [20:05:45] Starting Placer Task
+... [20:28:38] Starting Routing Task
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [SDSoC 0-0] See /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/p0/ipi/vivado.log for the context of the Vivado message above.
+INFO: [SDSoC 0-0] Creating boot files
+system_linker completed at Fri Aug 11 22:40:20 CEST 2017
+Timing constraints are not met.
+CRITICAL WARNING: [SDSoC 0-0] Timing constraints were not met, see the report : Partition 0 : Timing summary /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/p0/ipi/zcu102_es2_ev.runs/impl_1/zcu102_es2_ev_wrapper_timing_summary_routed.rpt
+CRITICAL WARNING: [SDSoC 0-0] Timing constraints were not met in this design.
+    Review violations in the timing summary report to identify possible
+    causes. You can try running the application, but the design is not
+    guaranteed to work. Please refer to 'Troubleshooting Compile and
+    Link Time Errors' in Chapter 3 'Environment Troubleshooting' of the
+    'UG1027 SDSoC Environment User Guide' for additional information.
+    If Vivado HLS cannot meet timing, possible solutions include:
+    - Try a slower clock frequency for the accelerator
+    - Modify the code to allow HLS to generate a faster implementation
+    If Vivado cannot meet timing, possible solutions include:
+    - Try a slower clock frequency for the accelerator or data motion network
+    - Synthesize HLS blocks at a higher clock frequency
+    - Optimize HLS code or add directives to improve performance
+    - Reduce design size if resource utilization is high
+    See also 'UG906 Vivado Design Analysis and Closure Techniques'
+    Chapter 2 'Timing Analysis Features (understanding the timing report)'.
+sds++ log file saved as /home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_from_file/Release/_sds/reports/sds.log
+
+Finished building target: obj_det_from_file.elf
+ 
+
+22:40:22 Build Finished (took 4h:40m:17s.594ms)
+

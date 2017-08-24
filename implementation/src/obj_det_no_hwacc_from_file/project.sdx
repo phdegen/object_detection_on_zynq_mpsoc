@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="obj_det_no_hwacc_from_file" location="/home/msc17f2/ma/object_detection_on_zynq_mpsoc/implementation/src/obj_det_no_hwacc_from_file" platform="zcu102_es2_ev" sysConfig="linux" runtime="C/C++" cpu="a53_0" os="linux" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.1572482575">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.612644156">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" genbitstream="true" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+</sdsproject:SDSProject>

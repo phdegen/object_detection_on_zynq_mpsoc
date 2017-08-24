@@ -1,0 +1,7 @@
+17:56:52 **** Clean-only build of configuration Release for project obj_det_no_hwacc_from_file ****
+make clean 
+rm -rf _sds sd_card  ./src/eval_results.o ./src/finalise_output.o ./src/image_utils.o ./src/load_model.o ./src/run.o ./src/run_network.o  ./src/eval_results.d ./src/finalise_output.d ./src/image_utils.d ./src/load_model.d ./src/run.d ./src/run_network.d  obj_det_no_hwacc_from_file.elf
+ 
+
+17:56:52 Build Finished (took 60ms)
+

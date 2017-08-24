@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.3_sdx (64-bit)
+# SW Build 1721784 on Tue Nov 29 22:12:24 MST 2016
+# IP Build 1720686 on Mon Nov 28 12:39:17 MST 2016
+# Start of session at: Wed Dec 14 23:37:34 2016
+# Process ID: 18025
+# Current directory: /group/paeg/ckohn/zcu102_base_trd_package_2016.3/pl/zcu102_base_trd
+# Command line: vivado -s ./scripts/create_project.tcl -tclargs -platform zcu102 -silicon es2 -design ev
+# Log file: /group/paeg/ckohn/zcu102_base_trd_package_2016.3/pl/zcu102_base_trd/vivado.log
+# Journal file: /group/paeg/ckohn/zcu102_base_trd_package_2016.3/pl/zcu102_base_trd/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source ./scripts/create_project.tcl
+save_bd_design
+archive_project /group/paeg/ckohn/zcu102_base_trd_package_2016.3/pl/zcu102_base_trd/zcu102_es2_ev.xpr.zip -force -exclude_run_results

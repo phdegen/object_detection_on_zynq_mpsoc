@@ -1,0 +1,1 @@
+Both binary files contain the weights of the SqueezeDet model in int8 quantised numbers. The model with padding has a padding in Layers 1,2,3,6,7,ConvDet in order to run it efficiently with the designed hardware accelerators. The data order is input channels -> width -> height -> output channels. The layer order can be checked in the code of the load_model.c file.

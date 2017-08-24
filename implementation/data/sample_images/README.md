@@ -1,0 +1,1 @@
+The images in this folder are saved as binary files, where the format of the number is unsigned int8 and the data order is channel->width->height . The images have 3 channels coding GBR. The handling e.g. with python and openCV can be seen in the check_img.py file in the utils folder.

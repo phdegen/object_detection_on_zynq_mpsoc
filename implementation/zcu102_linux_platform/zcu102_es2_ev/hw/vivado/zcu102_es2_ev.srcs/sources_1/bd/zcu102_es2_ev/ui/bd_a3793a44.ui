@@ -1,0 +1,91 @@
+{
+   Display-IntfAXI4Lite: "false",
+   Display-PortTypeClock: "false",
+   Display-PortTypeInterrupt: "false",
+   Display-PortTypeOthers: "true",
+   Display-PortTypeReset: "false",
+   DisplayPinAutomationMissing: "1",
+   DisplayTieOff: "1",
+   HideNet: "/M06_ARESETN_1|/proc_sys_reset_clk150_interconnect_aresetn|/proc_sys_reset_clk50_interconnect_aresetn|/proc_sys_reset_clk50_peripheral_aresetn|/gpio_Dout|",
+   comment_0: "Zynq UltraScale+ Base TRD",
+   comment_1: "Interrupts
+--------
+89: TPG VDMA Tx
+90: AXI IIC (FMC)
+91: HDMI VDMA Tx",
+   comment_2: "GPIOs
+-----
+78: FMC IIC Mux rst
+79: TPG rst",
+   commentid: "comment_0|comment_1|comment_2|",
+   fillcolor_comment_0: "",
+   fillcolor_comment_1: "",
+   fillcolor_comment_2: "",
+   font_comment_0: "54",
+   font_comment_1: "14",
+   font_comment_2: "14",
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port fmc_imageon_iic -pg 1 -y 690 -defaultsOSRD
+preplace port fmc_imageon_hdmii_clk -pg 1 -y 340 -defaultsOSRD
+preplace port fmc_imageon_hdmii -pg 1 -y 360 -defaultsOSRD
+preplace port si570 -pg 1 -y 630 -defaultsOSRD
+preplace portBus fmc_imageon_iic_rst_b -pg 1 -y 180 -defaultsOSRD
+preplace inst axi_interconnect_hp1 -pg 1 -lvl 2 -y 370 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 3 -y 770 -defaultsOSRD
+preplace inst proc_sys_reset_clk300 -pg 1 -lvl 3 -y 50 -defaultsOSRD
+preplace inst axi_iic_1 -pg 1 -lvl 4 -y 700 -defaultsOSRD
+preplace inst gpio -pg 1 -lvl 4 -y 190 -defaultsOSRD
+preplace inst axi_interconnect_hpm0 -pg 1 -lvl 4 -y 370 -defaultsOSRD -resize 237 198
+preplace inst tpg_input -pg 1 -lvl 1 -y 500 -defaultsOSRD -resize 207 118
+preplace inst proc_sys_reset_clk50 -pg 1 -lvl 3 -y 170 -defaultsOSRD
+preplace inst interrupts -pg 1 -lvl 2 -y 670 -defaultsOSRD -resize 129 113
+preplace inst si570_clk -pg 1 -lvl 1 -y 630 -defaultsOSRD
+preplace inst proc_sys_reset_clk150 -pg 1 -lvl 3 -y 500 -defaultsOSRD
+preplace inst proc_sys_reset_clk75 -pg 1 -lvl 3 -y 340 -defaultsOSRD
+preplace inst fmc_hdmi_input -pg 1 -lvl 1 -y 360 -defaultsOSRD -resize 211 127
+preplace inst clk_wiz_1 -pg 1 -lvl 2 -y 190 -defaultsOSRD -resize 109 78
+preplace netloc axi_interconnect_hp0_M00_AXI 1 2 1 560
+preplace netloc axi_interconnect_gp0_M02_AXI 1 4 2 2210 580n 2630
+preplace netloc gpio_Dout 1 2 2 710 370n NJ
+preplace netloc axi_interconnect_gp0_M01_AXI 1 0 6 60 10n NJ 10n NJ 10n NJ 10n NJ 10n 2590
+preplace netloc axi_interconnect_gp0_M04_AXI 1 0 6 60 440n NJ 440n NJ 310n NJ 310n NJ 530n 2590
+preplace netloc proc_sys_reset_clk50_peripheral_aresetn 1 0 4 50 320n NJ 330n NJ 360n 1430
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 3 1 1260J
+preplace netloc CLK_IN_D_1 1 0 1 NJ
+preplace netloc axi_interconnect_gp0_M00_AXI 1 0 6 20 200n NJ 200n NJ 200n NJ 180n NJ 180n 2580
+preplace netloc interrupts_dout 1 2 1 570J
+preplace netloc proc_sys_reset_clk150_interconnect_aresetn 1 1 3 360 340n NJ 350n NJ
+preplace netloc tpg_input_s2mm_introut 1 1 1 340
+preplace netloc gpio_Dout1 1 0 5 20 250 NJ 250 NJ 250 NJ 250 1540
+preplace netloc clk_wiz_1_locked 1 2 1 570
+preplace netloc clk_50mhz 1 0 5 0 60n NJ 60n 850 70n NJ 70n 2070
+preplace netloc axi_iic_1_iic2intc_irpt 1 1 5 410 40n NJ 40n NJ 40n NJ 40n 2380
+preplace netloc tpg_input_M_AXI_S2MM 1 1 1 280
+preplace netloc axi_iic_0_IIC 1 4 1 NJ
+preplace netloc S00_AXI_2 1 1 1 NJ
+preplace netloc video_clk_1 1 0 3 20 570n 280 510n NJ
+preplace netloc fmc_hdmi_input_s2mm_introut 1 1 1 350
+preplace netloc M06_ARESETN_1 1 0 4 20 10n 340 10n NJ 340n NJ
+preplace netloc clk_150mhz 1 0 5 30 480n 400 90n 830 110n 1660 110n 2090
+preplace netloc IO_HDMII_1 1 0 1 NJ
+preplace netloc proc_sys_reset_clk50_interconnect_aresetn 1 3 1 NJ
+preplace netloc zynq_ultra_ps_e_0_emio_gpio_o 1 3 1 1250
+preplace netloc xlslice_0_Dout 1 4 1 NJ
+preplace cgraphic comment_2 place abs 1301 36 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_1 place abs 156 727 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_0 place abs 456 -100 textcolor 4 linecolor 3 linewidth 0
+levelinfo -pg 1 0 150 430 910 1400 1560 -top -10 -bot 960
+",
+   linecolor_comment_0: "",
+   linecolor_comment_1: "",
+   linecolor_comment_2: "",
+   linktoobj_comment_1: "/interrupts",
+   linktoobj_comment_2: "/axi_interconnect_hpm0",
+   linktotype_comment_1: "bd_cell",
+   linktotype_comment_2: "bd_cell",
+   textcolor_comment_0: "",
+   textcolor_comment_1: "",
+   textcolor_comment_2: "",
+}
+0
