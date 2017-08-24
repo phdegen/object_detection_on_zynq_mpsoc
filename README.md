@@ -1,4 +1,4 @@
-#OBJECT DETECTION ON THE ZYNQ MPSOC
+# OBJECT DETECTION ON THE ZYNQ MPSOC
 
 The repository contains the main work of the Master thesis conducted by Ph. Degen in summer 2017. The different directories are quickly explained in the following.
 
