@@ -1,6 +1,6 @@
 # OBJECT DETECTION ON THE ZYNQ MPSOC
 
-The repository contains the main work of the Master thesis conducted by Ph. Degen in summer 2017. The different directories are quickly explained in the following.
+The repository contains the main work of the Master thesis conducted by Ph. Degen in summer 2017. It implements an embedded object detection platform realised on the Xilinx zcu 102 board featuring a Zynq Ultrascale+ MPSOC. The underlying algorithm is *SqueezeDet* from [this repo](https://github.com/BichenWuUCB/squeezeDet). The weights and activations are quantised and two hardware accelerators are designed with the help of Xilinx's SDSoC and High-Level Synthesis Compiler (Vivado HLS). The different directories are quickly explained in the following.
 
 * doc/ : The doc directory contains the actual master thesis report and a guide that illustrates what is needed to run a compilation and/or run the application on the board/system.
 
